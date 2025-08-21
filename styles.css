@@ -130,6 +130,10 @@ p {
     transition: all 0.3s ease;
 }
 
+.header-hidden {
+    transform: translateY(-100%);
+}
+
 .header.scrolled {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
@@ -596,6 +600,15 @@ p {
         font-size: 1.8rem;
     }
     
+    /* Ajustări pentru navigație pe tablete */
+    .header {
+        padding: 15px 0;
+    }
+    
+    .header.scrolled {
+        padding: 12px 0;
+    }
+    
     .header .container {
         flex-direction: column;
     }
@@ -646,12 +659,26 @@ p {
         font-size: 0.9rem;
     }
     
+    /* Navigație mai mică pentru telefoane */
+    .header {
+        padding: 10px 0;
+    }
+    
+    .header.scrolled {
+        padding: 8px 0;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
     .nav-item {
         margin: 0 5px;
     }
     
     .nav-link {
         font-size: 0.9rem;
+        padding: 3px 0;
     }
     
     .social-link {
